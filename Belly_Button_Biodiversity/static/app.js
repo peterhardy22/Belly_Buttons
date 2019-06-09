@@ -56,7 +56,7 @@ function buildCharts(sample_metadata) {
       xaxis: {title: 'OTU ID'}
     };
 
-    Plotly.newPlot('bubble', bubbleData, bubbleLayout);
+    Plotly.plot('bubble', bubbleData, bubbleLayout);
 
     // Build a Pie Chart using the sample data
     var pieData = [{
@@ -76,7 +76,7 @@ function buildCharts(sample_metadata) {
       margin: {t: 0, l: 0}
     }
 
-    Plotly.newPlot('pie', pieData, pieLayout); 
+    Plotly.plot('pie', pieData, pieLayout); 
 
   })
 }
